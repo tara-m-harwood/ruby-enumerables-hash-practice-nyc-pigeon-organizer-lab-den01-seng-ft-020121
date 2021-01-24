@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
             new_hash[element][outer_key] << inner_key
           else
             
-            # if the outer key hasn't been added, assign inner_key to the outer_key
+            # if the outer key hasn't been added, create the outer_key and assign to the inner_key
             new_hash[element][outer_key] = [inner_key]
           end  
           
@@ -33,8 +33,7 @@ def nyc_pigeon_organizer(data)
           new_hash[element] = {outer_key => [inner_key]}
          
         end
-        
-        
+      
        end
        
       end  
